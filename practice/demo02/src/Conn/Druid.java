@@ -25,7 +25,7 @@ public class Druid {
             e.printStackTrace();
         }
     }
-
+//测试
     public static Connection getConn() {
         try {
             return dataSource.getConnection();
