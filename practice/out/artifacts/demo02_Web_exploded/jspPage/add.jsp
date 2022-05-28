@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <style>
-    *{
+    * {
         font-size: 30px;
     }
 </style>

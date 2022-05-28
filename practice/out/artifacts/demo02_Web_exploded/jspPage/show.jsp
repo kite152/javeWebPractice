@@ -6,7 +6,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <style>
-    tr{
+    tr {
         height: 80px;
     }
 </style>
