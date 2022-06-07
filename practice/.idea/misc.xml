@@ -5,8 +5,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/maventest/pom.xml" />
-        <option value="$PROJECT_DIR$/demo04/pom.xml" />
         <option value="$PROJECT_DIR$/demo03_maventest/pom.xml" />
+        <option value="$PROJECT_DIR$/demo04/pom.xml" />
+        <option value="$PROJECT_DIR$/demo05/pom.xml" />
+        <option value="$PROJECT_DIR$/demo05_springbot/pom.xml" />
       </list>
     </option>
   </component>

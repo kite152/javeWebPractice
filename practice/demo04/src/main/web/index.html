@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="m1()">
+<table id="tb">
+    <tr>
+        <td>学号</td>
+        <td>姓名</td>
+    </tr>
+</table>
+
+</body>
+<script>
+    function m1() {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        //发出请求
+        xmlhttp.open("POST", "Data", true);
+        xmlhttp.send();
+        //异步用自己的方式去做响应的标准化
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                var a = xmlhttp.responseText;
+                var stus = JSON.parse(a);
+                //获取table节点
+                var table = document.getElementById("tb");
+                for (var i = 0; i < stus.length; i++) {
+
+                    //创建文本节点
+                    var text_id = document.createTextNode(stus[i].id);
+                    var text_name = document.createTextNode(stus[i].name);
+                    //创建td节点
+                    var td_id = document.createElement("td");
+                    var td_name = document.createElement("td");
+                    //创建tr节点
+                    var tr = document.createElement("tr");
+                    //开始挂节点
+                    table.append(tr);
+                    td_id.append(text_id);
+                    td_name.append(text_name);
+                    tr.append(td_id);
+                    tr.append(td_name);
+                }
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="demo04:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/demo04_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="demo04/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="demo04" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.alibaba.fastjson2:fastjson2:2.0.3" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
